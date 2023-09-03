@@ -32,19 +32,22 @@ export const LoginForm = () => {
         onSubmit={handleSubmit}
       >
         <TextField
+          autoFocus
+          required
           type="email"
           name="email"
           label="Email"
           variant="outlined"
-          autoComplete="off"
+          // autoComplete="off"
           size="small"
         />
         <TextField
+          required
           type="password"
           name="password"
           label="Password"
           variant="outlined"
-          autoComplete="off"
+          autoComplete="current-password"
           size="small"
         />
         <Button variant="contained" size="large" type="submit">

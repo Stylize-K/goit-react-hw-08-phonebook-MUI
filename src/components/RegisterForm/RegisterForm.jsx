@@ -33,6 +33,8 @@ export const RegisterForm = () => {
         onSubmit={handleSubmit}
       >
         <TextField
+          autoFocus
+          required
           type="text"
           name="name"
           label="Username"
@@ -41,6 +43,7 @@ export const RegisterForm = () => {
           size="small"
         />
         <TextField
+          required
           type="email"
           name="email"
           label="Email"

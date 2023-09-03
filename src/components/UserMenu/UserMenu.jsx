@@ -12,7 +12,7 @@ export const UserMenu = () => {
   return (
     <div className={css.wrapper}>
       <FcBusinessman size={'1.5em'} />
-      <p className={css.username}>Welcome, {user.name}</p>
+      <p className={css.username}>{user.name}</p>
       <Button
         variant="outlined"
         size="small"
